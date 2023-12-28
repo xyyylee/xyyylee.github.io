@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Title</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#ariesArticle {
+				width: 200px; /* Set a fixed width */
+				height: 200px; /* Set a fixed height */
+				border-radius: 50%; /* Make the article circular */
+				overflow: hidden; /* Hide overflow content for circular shape */
+				cursor: pointer; /* Set cursor to pointer for better interaction */
+			}
+			
+			#ariesImage {
+				width: 100%; /* Occupy 100% of the container's width */
+				height: 100%; /* Occupy 100% of the container's height */
+				border-radius: 50%; /* Make the image circular */
+				overflow: hidden; /* Hide overflow content for circular shape */
+				display: inline-block; /* Ensure inline-block to correctly apply border-radius */
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">XYL'sounds</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>菜单</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">About Me</a></li>
+							<li><a href="elements.html">元素</a></li>
+						</ul>
+					</nav>
+				
+
+				<script>
+					var audio = new Audio();
+					function toggleAudio(audioSrc) {
+						if (audio.paused) {
+							if (audioSrc) {
+								audio.src = audioSrc;
+							}
+							audio.play();
+						} else {
+							audio.pause();
+						}
+					}
+				</script>
+				
+				<!-- Main -->
+
+				<div id="main">
+					<div class="inner">
+						
+						<!-- About Me Content -->
+						<section id="aboutMeContent">
+							<h1>About Me</h1>
+							<p>Welcome to my world of sounds! I am Lee Xinyang, the creator behind XYL'sounds. As a student, I have a passion for learning, particularly in science and technology. I enjoy challenging myself academically, engaging in activities, and dedicating time to volunteer work. I have a profound love for sound; music resonates deeply within me, and sound design and recording serve as one of my ways to express emotions. White noice has always been one of my passions, and I believe in the power of sound to inspire, heal, and connect people.</p>
+							<p>With a background in music composition and a love for experimentation, I strive to create unique and meaningful sonic experiences. Join me on this journey as we explore the beautiful realm of white noice together.</p>
+							<h5>I dare you touching my face!</h5>
+						</section>
+						<!-- Circular Profile Picture -->
+						<div id="profilePictureContainer" onclick="toggleAudio('profile.mp3')">
+							<img id="profilePicture" src="images/profile.png" alt="Profile Picture" />
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>Embrace the Power of Sound</h2>
+							<blockquote>
+								<p>"To live is to be musical, starting with the blood dancing in your veins. Everything living has a rhythm. Do you feel your music?"</p>
+								<footer>&mdash; Michael Jackson</footer>
+							</blockquote>
+						</section>
+						
+						<section>
+							<h2>Follow</h2>
+							<ul class="icons">
+								<li><a href="https://x.com/lixinya95167356?s=21&t=BzesP52_8gjABqke6Vx-_A" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.instagram.com/9099ethan?igsh=dGVpODJyamNsNWNp&utm_source=qr" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/xyyylee" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="18940186659" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+								<li><a href="lxy18940186659@163.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</section>
+						<ul class="copyright">
+							<li>&copy; Lee Xinyang</li><li>Design: <a href="https://github.com/alalalex-m">AlxXxlA</a></li>
+						</ul>
+					</div>
+				</footer>
+				
+			</div>
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		
+	</body>
+</html>

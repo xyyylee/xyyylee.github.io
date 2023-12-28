@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Title</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#ariesArticle {
+				width: 200px; /* Set a fixed width */
+				height: 200px; /* Set a fixed height */
+				border-radius: 50%; /* Make the article circular */
+				overflow: hidden; /* Hide overflow content for circular shape */
+				cursor: pointer; /* Set cursor to pointer for better interaction */
+			}
+			
+			#ariesImage {
+				width: 100%; /* Occupy 100% of the container's width */
+				height: 100%; /* Occupy 100% of the container's height */
+				border-radius: 50%; /* Make the image circular */
+				overflow: hidden; /* Hide overflow content for circular shape */
+				display: inline-block; /* Ensure inline-block to correctly apply border-radius */
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/Libra.svg" alt="" /></span><span class="title">XYL'sounds</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>菜单</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">About Me</a></li>
+						</ul>
+					</nav>
+				
+
+				<script>
+					var audio = new Audio();
+					function toggleAudio(audioSrc) {
+						if (audio.paused) {
+							if (audioSrc) {
+								audio.src = audioSrc;
+							}
+							audio.play();
+						} else {
+							audio.pause();
+						}
+					}
+				</script>
+				
+				<!-- Main -->
+				<div id="main">
+					<div class="inner">
+						<header>
+							<h1>Libra</h1>
+							<p>Touch to play sounds.
+								Touch again to stop.</p>
+						</header>
+						<section class="tiles">
+							<article class="styleX" id="ariesArticle">
+								<span class="image">
+									<span class="image" id="ariesImage">
+										<img src="Libra/光脚走在水里.jpg" alt="" />
+									</span>
+								</span>
+								<a onclick="toggleAudio('Libra/光脚走在水里.mp3')">
+									<h2>Play</h2>
+									<div class="content">
+										<p>光脚走在水里</p>
+									</div>
+								</a>
+							</article>
+							<article class="styleX" id="ariesArticle">
+								<span class="image">
+									<span class="image" id="ariesImage">
+										<img src="Libra/走在江边.jpg" alt="" />
+									</span>
+								</span>
+								<a onclick="toggleAudio('Libra/走在江边.mp3')">
+									<h2>Play</h2>
+									<div class="content">
+										<p>走在江边</p>
+									</div>
+								</a>
+							</article>
+							<article class="styleX" id="ariesArticle">
+								<span class="image">
+									<span class="image" id="ariesImage">
+										<img src="Libra/走过石子路.jpg" alt="" />
+									</span>
+								</span>
+								<a onclick="toggleAudio('Libra/走过石子路.mp3')">
+									<h2>Play</h2>
+									<div class="content">
+										<p>走过石子路</p>
+									</div>
+								</a>
+							</article>
+							<article class="styleX" id="ariesArticle">
+								<span class="image">
+									<span class="image" id="ariesImage">
+										<img src="Libra/走过铁锁木桥.jpg" alt="" />
+									</span>
+								</span>
+								<a onclick="toggleAudio('Libra/走过铁锁木桥.mp3')">
+									<h2>Play</h2>
+									<div class="content">
+										<p>走过铁锁木桥</p>
+									</div>
+								</a>
+							</article>
+							<article class="styleX" id="ariesArticle">
+								<span class="image">
+									<span class="image" id="ariesImage">
+										<img src="Libra/走进枯木森林.jpg" alt="" />
+									</span>
+								</span>
+								<a onclick="toggleAudio('Libra/走进枯木森林.mp3')">
+									<h2>Play</h2>
+									<div class="content">
+										<p>走进枯木森林</p>
+									</div>
+								</a>
+							</article>
+							<article class="styleX" id="ariesArticle">
+								<span class="image">
+									<span class="image" id="ariesImage">
+										<img src="Libra/下山石板路.jpg" alt="" />
+									</span>
+								</span>
+								<a onclick="toggleAudio('Libra/下山石板路.mp3')">
+									<h2>Play</h2>
+									<div class="content">
+										<p>下山石板路</p>
+									</div>
+								</a>
+							</article>
+							<article class="styleX" id="ariesArticle">
+								<span class="image">
+									<span class="image" id="ariesImage">
+										<img src="Libra/森林里的木板路.jpg" alt="" />
+									</span>
+								</span>
+								<a onclick="toggleAudio('Libra/森林里的木板路.mp3')">
+									<h2>Play</h2>
+									<div class="content">
+										<p>森林里的木板路</p>
+									</div>
+								</a>
+							</article>
+							<article class="styleX" id="ariesArticle">
+								<span class="image">
+									<span class="image" id="ariesImage">
+										<img src="Libra/积雪的木板路.jpg" alt="" />
+									</span>
+								</span>
+								<a onclick="toggleAudio('Libra/积雪的木板路.mp3')">
+									<h2>Play</h2>
+									<div class="content">
+										<p>积雪的木板路</p>
+									</div>
+								</a>
+							</article>
+						</section>
+					</div>
+				</div>
+				
+				
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>Embrace the Power of Sound</h2>
+							<blockquote>
+								<p>"To live is to be musical, starting with the blood dancing in your veins. Everything living has a rhythm. Do you feel your music?"</p>
+								<footer>&mdash; Michael Jackson</footer>
+							</blockquote>
+						</section>
+						
+						<section>
+							<h2>Follow</h2>
+							<ul class="icons">
+								<li><a href="https://x.com/lixinya95167356?s=21&t=BzesP52_8gjABqke6Vx-_A" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.instagram.com/9099ethan?igsh=dGVpODJyamNsNWNp&utm_source=qr" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/xyyylee" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="18940186659" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+								<li><a href="lxy18940186659@163.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</section>
+						<ul class="copyright">
+							<li>&copy; Lee Xinyang</li><li>Design: <a href="https://github.com/alalalex-m">AlxXxlA</a></li>
+						</ul>
+					</div>
+				</footer>
+				
+			</div>
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		
+	</body>
+</html>
